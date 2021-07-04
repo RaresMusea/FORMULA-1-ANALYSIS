@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Formula 1 Evidence Chart">
+    <meta name="author" content="F1 Analysis Team">
+    <title>F1 Detailed Evidence Graph</title>
+
+
+    <style>
+        body {
+            margin: 200px 90px 200px 400px;
+            background-image: url('resources/bg.jpg');
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+    </style>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+    <div class="bk-root" id="7137f408-9302-4c38-ab4e-25e70af74ae9" data-root-id="1002"></div>
+
+
+
+
+
+    <script type="application/json" id="1122">
+        {
+            "1909c597-75aa-404a-b99c-4743b52a32bc": {
+                "roots": {
+                    "references": [{
+                        "attributes": {
+                            "axis_label": "Count",
+                            "axis_label_text_font_size": "20px",
+                            "formatter": {
+                                "id": "1046"
+                            },
+                            "ticker": {
+                                "id": "1014"
+                            }
+                        },
+                        "id": "1013",
+                        "type": "LinearAxis"
+                    }, {
+                        "attributes": {},
+                        "id": "1011",
+                        "type": "CategoricalScale"
+                    }, {
+                        "attributes": {},
+                        "id": "1014",
+                        "type": "BasicTicker"
+                    }, {
+                        "attributes": {
+                            "callback": null,
+                            "tooltips": "\n    &lt;div class=\"btn\"&gt;\n        &lt;h2 align=\"center\"&gt;@Location&lt;/h2&gt;\n        &lt;div&gt;&lt;strong&gt;Country: &lt;/strong&gt;@aa&lt;/div&gt;\n        &lt;div&gt;&lt;strong&gt;City name: &lt;/strong&gt;@Country&lt;/div&gt;\n         &lt;div&gt;&lt;strong&gt;Number of competitions hosted: &lt;/strong&gt;@Name&lt;/div&gt;\n        &lt;div&gt;&lt;strong&gt;Image&lt;/strong&gt;&lt;br&gt;&lt;img src=\"@Number\" alt=\"\" width=\"250\"/&gt;&lt;/div&gt;\n    &lt;/div&gt;\n\n"
+                        },
+                        "id": "1040",
+                        "type": "HoverTool"
+                    }, {
+                        "attributes": {
+                            "factors": ["Albert Park Grand Prix Circuit", "Sepang International Circuit", "Bahrain International Circuit", "Circuit de Barcelona-Catalunya", "Istanbul Park", "Circuit de Monaco", "Circuit Gilles Villeneuve", "Circuit de Nevers Magny-Cours", "Silverstone Circuit", "Hockenheimring", "Hungaroring", "Valencia Street Circuit", "Circuit de Spa-Francorchamps", "Autodromo Nazionale di Monza", "Marina Bay Street Circuit", "Suzuka Circuit", "Shanghai International Circuit", "Autodromo Jose Carlos Pace", "Indianapolis Motor Speedway", "Nurburgring", "Autodromo Enzo e Dino Ferrari", "Fuji Speendway", "A1-Ring", "Yas Marina Circuit", "Autodromo Juan y Oscar Galvez", "Circuito de Jerez", "Autodromo do Estoril", "Okayama International Circuit", "Adelaide Street Circuit", "Kyalami", "Donington Park", "Autodromo Hermanos Rodriguez", "Phoenix Street Circuit", "Circuit Paul Ricard", "Korean International Circuit", "Autodromo International Nelson Piquet", "Detroit Street Circuit", "Brands Hatch Circuit", "Circuit Park Zandvoort", " Circuit Zolder", "Dijon-Prenois Circuit", "Fair Park Circuit", "Long Beach Circuit", "Caesars Palace Circuit", "Jarama", "Watkins Glen", "Scandinavian Raceway", "Mosport International Raceway", "Montjuic Circuit", "Nivelles-Baulers", "Circuit de Charade Circuit", "Circuit Mont-Tremblant", "Rouen-Les-Essarts", "Circuit des 24 heures du Mans", "Reims-Gueux", "Prince George Circuit", "Zeltweg Airfield ", "Aintree", "Monsanto Park Circuit", "Riverside International Raceway", "AVUS", "Circuito de Boavista", "Sebring International Raceway", "Ain Diab", "Pescara Circuit", "Circuit Bermgarten", "Circuit de Pedralbes", "Buddh International Circuit", "Circuit of the Americas", "Red Bull Ring", "Baku City Circuit", "Autodromo Internacional do Algarve", "Autodromo Internazionale del Mugello", "Sochi Autodrom"]
+                        },
+                        "id": "1007",
+                        "type": "FactorRange"
+                    }, {
+                        "attributes": {
+                            "fill_color": {
+                                "field": "Location",
+                                "transform": {
+                                    "id": "1034"
+                                }
+                            },
+                            "height": {
+                                "value": 0.4
+                            },
+                            "line_color": {
+                                "value": "#1f77b4"
+                            },
+                            "right": {
+                                "field": "Name"
+                            },
+                            "y": {
+                                "field": "Location"
+                            }
+                        },
+                        "id": "1036",
+                        "type": "HBar"
+                    }, {
+                        "attributes": {},
+                        "id": "1046",
+                        "type": "BasicTickFormatter"
+                    }, {
+                        "attributes": {},
+                        "id": "1025",
+                        "type": "HelpTool"
+                    }, {
+                        "attributes": {
+                            "factors": ["Albert Park Grand Prix Circuit", "Sepang International Circuit", "Bahrain International Circuit", "Circuit de Barcelona-Catalunya", "Istanbul Park", "Circuit de Monaco", "Circuit Gilles Villeneuve", "Circuit de Nevers Magny-Cours", "Silverstone Circuit", "Hockenheimring", "Hungaroring", "Valencia Street Circuit", "Circuit de Spa-Francorchamps", "Autodromo Nazionale di Monza", "Marina Bay Street Circuit", "Suzuka Circuit", "Shanghai International Circuit", "Autodromo Jose Carlos Pace", "Indianapolis Motor Speedway", "Nurburgring", "Autodromo Enzo e Dino Ferrari", "Fuji Speendway", "A1-Ring", "Yas Marina Circuit", "Autodromo Juan y Oscar Galvez", "Circuito de Jerez", "Autodromo do Estoril", "Okayama International Circuit", "Adelaide Street Circuit", "Kyalami", "Donington Park", "Autodromo Hermanos Rodriguez", "Phoenix Street Circuit", "Circuit Paul Ricard", "Korean International Circuit", "Autodromo International Nelson Piquet", "Detroit Street Circuit", "Brands Hatch Circuit", "Circuit Park Zandvoort", " Circuit Zolder", "Dijon-Prenois Circuit", "Fair Park Circuit", "Long Beach Circuit", "Caesars Palace Circuit", "Jarama", "Watkins Glen", "Scandinavian Raceway", "Mosport International Raceway", "Montjuic Circuit", "Nivelles-Baulers", "Circuit de Charade Circuit", "Circuit Mont-Tremblant", "Rouen-Les-Essarts", "Circuit des 24 heures du Mans", "Reims-Gueux", "Prince George Circuit", "Zeltweg Airfield ", "Aintree", "Monsanto Park Circuit", "Riverside International Raceway", "AVUS", "Circuito de Boavista", "Sebring International Raceway", "Ain Diab", "Pescara Circuit", "Circuit Bermgarten", "Circuit de Pedralbes", "Buddh International Circuit", "Circuit of the Americas", "Red Bull Ring", "Baku City Circuit", "Autodromo Internacional do Algarve", "Autodromo Internazionale del Mugello", "Sochi Autodrom"],
+                            "palette": ["#00441b", "#00451c", "#00471c", "#00481d", "#00491d", "#004a1e", "#004c1e", "#004d1f", "#004e1f", "#005020", "#005120", "#005221", "#005321", "#005522", "#005622", "#005723", "#005924", "#005a24", "#005b25", "#005c25", "#005e26", "#005f26", "#006027", "#006227", "#006328", "#006428", "#006529", "#006729", "#00682a", "#00692a", "#006b2b", "#006c2c", "#006d2c", "#016e2d", "#026f2e", "#03702e", "#05712f", "#067230", "#077331", "#087432", "#097532", "#0a7633", "#0b7734", "#0c7735", "#0d7836", "#0e7936", "#107a37", "#117b38", "#127c39", "#137d39", "#147e3a", "#157f3b", "#16803c", "#17813d", "#18823d", "#19833e", "#1a843f", "#1c8540", "#1d8640", "#1e8741", "#1f8742", "#208843", "#218944", "#228a44", "#238b45", "#248c46", "#258d47", "#268e47", "#278f48", "#289049", "#29914a", "#2a924a", "#2b934b", "#2c944c", "#2d954d", "#2e964d", "#2f974e", "#2f984f", "#309950", "#319a50", "#329b51", "#339c52", "#349d53", "#359e53", "#369f54", "#37a055", "#38a156", "#39a257", "#3aa357", "#3ba458", "#3ca559", "#3da65a", "#3ea75a", "#3fa85b", "#3fa95c", "#40aa5d", "#42ab5d", "#43ac5e", "#45ad5f", "#46ae60", "#48ae60", "#4aaf61", "#4bb062", "#4db163", "#4eb264", "#50b264", "#52b365", "#53b466", "#55b567", "#56b567", "#58b668", "#5ab769", "#5bb86a", "#5db96b", "#5eb96b", "#60ba6c", "#62bb6d", "#63bc6e", "#65bd6f", "#66bd6f", "#68be70", "#6abf71", "#6bc072", "#6dc072", "#6ec173", "#70c274", "#72c375", "#73c476", "#75c477", "#76c578", "#78c679", "#79c67a", "#7ac77b", "#7cc87c", "#7dc87e", "#7fc97f", "#80ca80", "#81ca81", "#83cb82", "#84cc83", "#86cc85", "#87cd86", "#88ce87", "#8ace88", "#8bcf89", "#8dd08a", "#8ed08b", "#90d18d", "#91d28e", "#92d28f", "#94d390", "#95d391", "#97d492", "#98d594", "#99d595", "#9bd696", "#9cd797", "#9ed798", "#9fd899", "#a0d99b", "#a2d99c", "#a3da9d", "#a4da9e", "#a5db9f", "#a7dba0", "#a8dca2", "#a9dca3", "#aadda4", "#abdda5", "#acdea6", "#aedea7", "#afdfa8", "#b0dfaa", "#b1e0ab", "#b2e0ac", "#b4e1ad", "#b5e1ae", "#b6e2af", "#b7e2b1", "#b8e3b2", "#bae3b3", "#bbe4b4", "#bce4b5", "#bde5b6", "#bee5b8", "#c0e6b9", "#c1e6ba", "#c2e7bb", "#c3e7bc", "#c4e8bd", "#c6e8bf", "#c7e9c0", "#c8e9c1", "#c9eac2", "#caeac3", "#cbeac4", "#cbebc5", "#ccebc6", "#cdecc7", "#ceecc8", "#cfecc9", "#d0edca", "#d1edcb", "#d2edcc", "#d3eecd", "#d4eece", "#d5efcf", "#d6efd0", "#d7efd1", "#d8f0d2", "#d9f0d3", "#daf0d4", "#dbf1d5", "#dbf1d6", "#dcf2d7", "#ddf2d8", "#def2d9", "#dff3da", "#e0f3db", "#e1f3dc", "#e2f4dd", "#e3f4de", "#e4f5df", "#e5f5e0", "#e5f5e1", "#e6f5e1", "#e7f6e2", "#e7f6e3", "#e8f6e3", "#e8f6e4", "#e9f7e5", "#e9f7e5", "#eaf7e6", "#ebf7e7", "#ebf7e7", "#ecf8e8", "#ecf8e8", "#edf8e9", "#edf8ea", "#eef8ea", "#eff9eb", "#eff9ec", "#f0f9ec", "#f0f9ed", "#f1faee", "#f1faee", "#f2faef", "#f2faf0", "#f3faf0", "#f4fbf1", "#f4fbf2", "#f5fbf2", "#f5fbf3", "#f6fcf4", "#f6fcf4", "#f7fcf5"]
+                        },
+                        "id": "1034",
+                        "type": "CategoricalColorMapper"
+                    }, {
+                        "attributes": {
+                            "axis": {
+                                "id": "1013"
+                            },
+                            "ticker": null
+                        },
+                        "id": "1016",
+                        "type": "Grid"
+                    }, {
+                        "attributes": {},
+                        "id": "1009",
+                        "type": "LinearScale"
+                    }, {
+                        "attributes": {
+                            "text": "F1 Races on each circuit (1950-2020)",
+                            "text_font": "times",
+                            "text_font_style": "italic"
+                        },
+                        "id": "1003",
+                        "type": "Title"
+                    }, {
+                        "attributes": {
+                            "fill_alpha": {
+                                "value": 0.1
+                            },
+                            "fill_color": {
+                                "field": "Location",
+                                "transform": {
+                                    "id": "1034"
+                                }
+                            },
+                            "height": {
+                                "value": 0.4
+                            },
+                            "line_alpha": {
+                                "value": 0.1
+                            },
+                            "line_color": {
+                                "value": "#1f77b4"
+                            },
+                            "right": {
+                                "field": "Name"
+                            },
+                            "y": {
+                                "field": "Location"
+                            }
+                        },
+                        "id": "1037",
+                        "type": "HBar"
+                    }, {
+                        "attributes": {},
+                        "id": "1024",
+                        "type": "ResetTool"
+                    }, {
+                        "attributes": {
+                            "below": [{
+                                "id": "1013"
+                            }],
+                            "center": [{
+                                "id": "1016"
+                            }, {
+                                "id": "1019"
+                            }],
+                            "left": [{
+                                "id": "1017"
+                            }],
+                            "plot_height": 1080,
+                            "plot_width": 1920,
+                            "renderers": [{
+                                "id": "1038"
+                            }],
+                            "title": {
+                                "id": "1003"
+                            },
+                            "toolbar": {
+                                "id": "1027"
+                            },
+                            "x_range": {
+                                "id": "1005"
+                            },
+                            "x_scale": {
+                                "id": "1009"
+                            },
+                            "y_range": {
+                                "id": "1007"
+                            },
+                            "y_scale": {
+                                "id": "1011"
+                            }
+                        },
+                        "id": "1002",
+                        "subtype": "Figure",
+                        "type": "Plot"
+                    }, {
+                        "attributes": {},
+                        "id": "1023",
+                        "type": "SaveTool"
+                    }, {
+                        "attributes": {
+                            "source": {
+                                "id": "1001"
+                            }
+                        },
+                        "id": "1039",
+                        "type": "CDSView"
+                    }, {
+                        "attributes": {
+                            "overlay": {
+                                "id": "1026"
+                            }
+                        },
+                        "id": "1022",
+                        "type": "BoxZoomTool"
+                    }, {
+                        "attributes": {
+                            "data_source": {
+                                "id": "1001"
+                            },
+                            "glyph": {
+                                "id": "1036"
+                            },
+                            "hover_glyph": null,
+                            "muted_glyph": null,
+                            "nonselection_glyph": {
+                                "id": "1037"
+                            },
+                            "selection_glyph": null,
+                            "view": {
+                                "id": "1039"
+                            }
+                        },
+                        "id": "1038",
+                        "type": "GlyphRenderer"
+                    }, {
+                        "attributes": {},
+                        "id": "1020",
+                        "type": "PanTool"
+                    }, {
+                        "attributes": {
+                            "bottom_units": "screen",
+                            "fill_alpha": 0.5,
+                            "fill_color": "lightgrey",
+                            "left_units": "screen",
+                            "level": "overlay",
+                            "line_alpha": 1.0,
+                            "line_color": "black",
+                            "line_dash": [4, 4],
+                            "line_width": 2,
+                            "right_units": "screen",
+                            "top_units": "screen"
+                        },
+                        "id": "1026",
+                        "type": "BoxAnnotation"
+                    }, {
+                        "attributes": {},
+                        "id": "1044",
+                        "type": "CategoricalTickFormatter"
+                    }, {
+                        "attributes": {},
+                        "id": "1021",
+                        "type": "WheelZoomTool"
+                    }, {
+                        "attributes": {},
+                        "id": "1047",
+                        "type": "Selection"
+                    }, {
+                        "attributes": {
+                            "active_drag": "auto",
+                            "active_inspect": "auto",
+                            "active_multi": null,
+                            "active_scroll": "auto",
+                            "active_tap": "auto",
+                            "tools": [{
+                                "id": "1020"
+                            }, {
+                                "id": "1021"
+                            }, {
+                                "id": "1022"
+                            }, {
+                                "id": "1023"
+                            }, {
+                                "id": "1024"
+                            }, {
+                                "id": "1025"
+                            }, {
+                                "id": "1040"
+                            }]
+                        },
+                        "id": "1027",
+                        "type": "Toolbar"
+                    }, {
+                        "attributes": {},
+                        "id": "1048",
+                        "type": "UnionRenderers"
+                    }, {
+                        "attributes": {},
+                        "id": "1005",
+                        "type": "DataRange1d"
+                    }, {
+                        "attributes": {},
+                        "id": "1018",
+                        "type": "CategoricalTicker"
+                    }, {
+                        "attributes": {
+                            "axis": {
+                                "id": "1017"
+                            },
+                            "dimension": 1,
+                            "ticker": null
+                        },
+                        "id": "1019",
+                        "type": "Grid"
+                    }, {
+                        "attributes": {
+                            "data": {
+                                "Country": ["Melbourne", "Kuala Lumpur", "Sakhir", "Montmelo", "Istanbul", "Monte Carlo", "Montreal", "Magny Cours", "Silverstone", "Hockenheim", "Budapest", "Valencia", "Spa", "Monza", "Marina Bay", "Suzuka", "Shanghai", "Sao Paulo", "Indianapolis", "Nurburg", "Imola", "Oyama", "Spielburg", "Abu Dhabi", "Buenos Aires", "Jerez de la Frontera", "Estoril", "Okayama", "Adelaide", "Midrand", "Castle Donington", "Mexico City", "Phoenix", "La Castellet", "Yeongam Country", "Rio de Janeiro", "Detroit", "Kent", "Zandvoort", "Heusden-Zolder", "Dijon", "Dallas", "California", "Nevada", "Madrid", "New York State", "Anderstorp", "Ontario", "Barcelona", "Brussels", "Clermont-Ferrand", "Quebec", "Rouen", "Le Mans", "Reims", "Eastern Cape Province", "Styria", "Liverpool", "Lisbon", "Caliornia", "Berlin", "Oporto", "Florida", "Casablanca", "Pescara", "Bern", "Barcelona", "Uttar Pradesh", "Austin", "Spielburg", "Baku", "Portimao", "Mugello", "Sochi"],
+                                "Image": {
+                                    "__ndarray__": "AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fw==",
+                                    "dtype": "float64",
+                                    "order": "little",
+                                    "shape": [74]
+                                },
+                                "Location": ["Albert Park Grand Prix Circuit", "Sepang International Circuit", "Bahrain International Circuit", "Circuit de Barcelona-Catalunya", "Istanbul Park", "Circuit de Monaco", "Circuit Gilles Villeneuve", "Circuit de Nevers Magny-Cours", "Silverstone Circuit", "Hockenheimring", "Hungaroring", "Valencia Street Circuit", "Circuit de Spa-Francorchamps", "Autodromo Nazionale di Monza", "Marina Bay Street Circuit", "Suzuka Circuit", "Shanghai International Circuit", "Autodromo Jose Carlos Pace", "Indianapolis Motor Speedway", "Nurburgring", "Autodromo Enzo e Dino Ferrari", "Fuji Speendway", "A1-Ring", "Yas Marina Circuit", "Autodromo Juan y Oscar Galvez", "Circuito de Jerez", "Autodromo do Estoril", "Okayama International Circuit", "Adelaide Street Circuit", "Kyalami", "Donington Park", "Autodromo Hermanos Rodriguez", "Phoenix Street Circuit", "Circuit Paul Ricard", "Korean International Circuit", "Autodromo International Nelson Piquet", "Detroit Street Circuit", "Brands Hatch Circuit", "Circuit Park Zandvoort", " Circuit Zolder", "Dijon-Prenois Circuit", "Fair Park Circuit", "Long Beach Circuit", "Caesars Palace Circuit", "Jarama", "Watkins Glen", "Scandinavian Raceway", "Mosport International Raceway", "Montjuic Circuit", "Nivelles-Baulers", "Circuit de Charade Circuit", "Circuit Mont-Tremblant", "Rouen-Les-Essarts", "Circuit des 24 heures du Mans", "Reims-Gueux", "Prince George Circuit", "Zeltweg Airfield ", "Aintree", "Monsanto Park Circuit", "Riverside International Raceway", "AVUS", "Circuito de Boavista", "Sebring International Raceway", "Ain Diab", "Pescara Circuit", "Circuit Bermgarten", "Circuit de Pedralbes", "Buddh International Circuit", "Circuit of the Americas", "Red Bull Ring", "Baku City Circuit", "Autodromo Internacional do Algarve", "Autodromo Internazionale del Mugello", "Sochi Autodrom"],
+                                "Name": [24, 19, 18, 30, 8, 66, 40, 18, 55, 38, 34, 5, 54, 69, 12, 31, 16, 37, 19, 41, 28, 4, 25, 12, 20, 7, 13, 2, 11, 20, 1, 20, 3, 16, 3, 10, 7, 14, 30, 10, 6, 1, 8, 2, 9, 20, 6, 8, 4, 2, 4, 2, 5, 1, 11, 3, 1, 5, 1, 1, 1, 2, 1, 1, 1, 5, 2, 3, 8, 8, 4, 1, 1, 7],
+                                "Number": ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Melbourne_Grand_Prix_Circuit%2C_March_22%2C_2018_SkySat_%28cropped%29.jpg/1200px-Melbourne_Grand_Prix_Circuit%2C_March_22%2C_2018_SkySat_%28cropped%29.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Sepang-international-circuit.JPG/1200px-Sepang-international-circuit.JPG", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bahrain_International_Circuit_back_straight.jpg/1200px-Bahrain_International_Circuit_back_straight.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Pit_Lane_Entrance%40circuitdeCatalunya.jpg/1200px-Pit_Lane_Entrance%40circuitdeCatalunya.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Istanbul_Park_aerial.jpg/1200px-Istanbul_Park_aerial.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Circuit_de_Monaco%2C_April_1%2C_2018_SkySat_%28cropped%29.jpg/1200px-Circuit_de_Monaco%2C_April_1%2C_2018_SkySat_%28cropped%29.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Circuit_Gilles-Villeneuve%2C_May_29%2C_2018_SkySat_%28cropped%29.jpg/1200px-Circuit_Gilles-Villeneuve%2C_May_29%2C_2018_SkySat_%28cropped%29.jpg ", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Magnycourt1new.jpg/1200px-Magnycourt1new.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Silverstone_Circuit%2C_July_2%2C_2018_SkySat_%28cropped%29.jpg/1200px-Silverstone_Circuit%2C_July_2%2C_2018_SkySat_%28cropped%29.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Hockenheimring%2C_April_29%2C_2018_SkySat_%28crop%29.jpg/1200px-Hockenheimring%2C_April_29%2C_2018_SkySat_%28crop%29.jpg ", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Hungaroring_Exit.JPG/1200px-Hungaroring_Exit.JPG", "https://upload.wikimedia.org/wikipedia/commons/f/ff/Swing-bridge_Valencia_Street_Circuit.jpg ", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Eau_Rouge_1997.jpg/1200px-Eau_Rouge_1997.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Autodromo_Nazionale_Monza%2C_April_22%2C_2018_SkySat_%28cropped%29.jpg/1200px-Autodromo_Nazionale_Monza%2C_April_22%2C_2018_SkySat_%28cropped%29.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/1_singapore_f1_night_race_2012_city_skyline.jpg/1200px-1_singapore_f1_night_race_2012_city_skyline.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Suzuka_Circuit_2006.jpg/1200px-Suzuka_Circuit_2006.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Shanghai_International_Circuit%2C_April_7%2C_2018_SkySat_%28rotated%29.jpg/1200px-Shanghai_International_Circuit%2C_April_7%2C_2018_SkySat_%28rotated%29.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace%2C_July_3%2C_2018_SkySat_%28cropped%29.jpg/1200px-Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace%2C_July_3%2C_2018_SkySat_%28cropped%29.jpg ", "https://upload.wikimedia.org/wikipedia/commons/2/29/Indianapolis-motor-speedway-1848561.jpg", "https://upload.wikimedia.org/wikipedia/commons/1/1d/Nurburgring_mercedes.jpg", "https://upload.wikimedia.org/wikipedia/commons/4/40/Imola2008.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Fisco_hairpin2.jpg/1200px-Fisco_hairpin2.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Red_Bull_Ring%2C_April_18%2C_2018_SkySat.jpg/1200px-Red_Bull_Ring%2C_April_18%2C_2018_SkySat.jpg ", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Yas_Marina_Circuit%2C_October_12%2C_2018_SkySat_%28cropped%29.jpg/1200px-Yas_Marina_Circuit%2C_October_12%2C_2018_SkySat_%28cropped%29.jpg", "https://www.motorsport.com/f1/photos/wilson-fittipaldi-jr-copersucar-fittipaldi-fd01-ford-11977265/11977265/", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Circuito_Jerez_-_20170528_140446.jpg/1200px-Circuito_Jerez_-_20170528_140446.jpg", "https://upload.wikimedia.org/wikipedia/commons/8/8e/SL_Estoril.jpg ", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Aston_Martin_Racing_won_2009_1000km_of_Okayama_%28Race_2%29.jpg/1200px-Aston_Martin_Racing_won_2009_1000km_of_Okayama_%28Race_2%29.jpg ", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Adelaide_Grand_Prix_Track_Senna_Chicane.jpeg/1200px-Adelaide_Grand_Prix_Track_Senna_Chicane.jpeg", "kyalami.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/SF_Donington_4.jpg/1200px-SF_Donington_4.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez%2C_June_4%2C_2018_SkySat_%28cropped%29.jpg/1200px-Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez%2C_June_4%2C_2018_SkySat_%28cropped%29.jpg", "phoenix.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Circuit_Paul_Ricard%2C_April_22%2C_2018_SkySat_%28cropped%29.jpg/1200px-Circuit_Paul_Ricard%2C_April_22%2C_2018_SkySat_%28cropped%29.jpg", "resources/Korean.jpg", "resources/nelson.jpg", "detroit.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Brands-hatch.jpg/1200px-Brands-hatch.jpg ", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Circuit_Zandvoort_motorsport_race_track_in_the_Netherlands_%2846940292845%29.jpg/1200px-Circuit_Zandvoort_motorsport_race_track_in_the_Netherlands_%2846940292845%29.jpg ", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Circuit_Zolder_6-11-2008_16-29-22.jpg/1200px-Circuit_Zolder_6-11-2008_16-29-22.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Dijon-Parabolique2000.jpg/1200px-Dijon-Parabolique2000.jpg ", "fair park.jpg", "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mark_Smith_Long_Beach_Grand_Prix_1993_Indy_car_race_CART.jpg", "las vegas.jpg", "jarama.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Tom_pryce_watglen_75_full.jpg/1200px-Tom_pryce_watglen_75_full.jpg", "resources/scandinavian.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Moss_Corner_Turn_5a_and_5b_at_Canadian_Tire_Motorsport_Park.jpg/1200px-Moss_Corner_Turn_5a_and_5b_at_Canadian_Tire_Motorsport_Park.jpg ", "resources/montjuic.jpg", "resources/baulers.jpg", "resources/charade.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Mont-Tremblant_Control_Tower.JPG/1200px-Mont-Tremblant_Control_Tower.JPG", "resources/rouen.jpg", "resources/mans.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Reimsstands.png/1200px-Reimsstands.png ", "resources/prince.jpg", "resources/airbase.jpg", "resources/aintree.jpg", "resources/monsanto.jpg", "https://upload.wikimedia.org/wikipedia/commons/0/03/RiversideInternationalRaceway_1988.jpg", "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bundesarchiv_Bild_102-13505%2C_Berlin%2C_Automobilrennen_auf_der_Avus.jpg", "resources/boavista.jpg", "https://upload.wikimedia.org/wikipedia/commons/c/c2/Sebring_satellite.png", "resources/morocco.jpg", "resources/pescara.jpg", "resources/bern.jpg", "resources/pd.jpg", "https://upload.wikimedia.org/wikipedia/commons/1/11/Buddh_international_circuit.jpg ", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/2018_US_Grand_Prix_at_the_Circuit_of_the_Americas.jpg/1200px-2018_US_Grand_Prix_at_the_Circuit_of_the_Americas.jpg ", "resources/red bull.jpg", "resources/baku.jpg", "resources/algavre.jpg", "https://upload.wikimedia.org/wikipedia/commons/e/e6/Mitjet-italie.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Sochi_Autodrom%2C_July_10%2C_2018_SkySat_%28cropped%29.jpg/1200px-Sochi_Autodrom%2C_July_10%2C_2018_SkySat_%28cropped%29.jpg"],
+                                "aa": ["Australia", "Malaysia", "Bahrain", "Spain", "Turkey", "Monaco", "Canada", "France", "United Kingdom", "Germany", "Hungary", "Spain", "Belgium", "Italy", "Singapore", "Japan", "China", "Brazil", "USA", "Germany", "Italy", "Japan", "Austria", "UAE", "Argentina", "Spain", "Portugal", "Japan", "Australia", "South Africa", "UK", "Mexico", "USA", "France", "Korea", "Brazil", "USA", "UK", "Netherlands", "Belgium", "France", "USA", "USA", "USA", "Spain", "USA", "Sweden", "Canada", "Spain", "Belgium", "France", "Canada", "France", "France", "France", "South Africa", "Austria", "UK", "Portugal", "USA", "Germany", "Portugal", "USA", "Morocco", "Italy", "Switzerland", "Spain", "India", "USA", "Austria", "Azerbaijan", "Portugal", "Italy", "Russia"],
+                                "bb": {
+                                    "__ndarray__": "AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fw==",
+                                    "dtype": "float64",
+                                    "order": "little",
+                                    "shape": [74]
+                                },
+                                "index": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73]
+                            },
+                            "selected": {
+                                "id": "1047"
+                            },
+                            "selection_policy": {
+                                "id": "1048"
+                            }
+                        },
+                        "id": "1001",
+                        "type": "ColumnDataSource"
+                    }, {
+                        "attributes": {
+                            "formatter": {
+                                "id": "1044"
+                            },
+                            "ticker": {
+                                "id": "1018"
+                            }
+                        },
+                        "id": "1017",
+                        "type": "CategoricalAxis"
+                    }],
+                    "root_ids": ["1002"]
+                },
+                "title": "Bokeh Application",
+                "version": "2.2.3"
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        (function() {
+            var fn = function() {
+                Bokeh.safely(function() {
+                    (function(root) {
+                        function embed_document(root) {
+
+                            var docs_json = document.getElementById('1122').textContent;
+                            var render_items = [{
+                                "docid": "1909c597-75aa-404a-b99c-4743b52a32bc",
+                                "root_ids": ["1002"],
+                                "roots": {
+                                    "1002": "7137f408-9302-4c38-ab4e-25e70af74ae9"
+                                }
+                            }];
+                            root.Bokeh.embed.embed_items(docs_json, render_items);
+
+                        }
+                        if (root.Bokeh !== undefined) {
+                            embed_document(root);
+                        } else {
+                            var attempts = 0;
+                            var timer = setInterval(function(root) {
+                                if (root.Bokeh !== undefined) {
+                                    clearInterval(timer);
+                                    embed_document(root);
+                                } else {
+                                    attempts++;
+                                    if (attempts > 100) {
+                                        clearInterval(timer);
+                                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                                    }
+                                }
+                            }, 10, root)
+                        }
+                    })(window);
+                });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+        })();
+    </script>
+
+</body>
+
+</html>
